@@ -1,0 +1,16 @@
+F:\VS Space\MovieToGif\bin\Debug\MovieToGif.exe.config
+F:\VS Space\MovieToGif\bin\Debug\MovieToGif.exe
+F:\VS Space\MovieToGif\bin\Debug\MovieToGif.pdb
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.csproj.AssemblyReference.cache
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.csproj.SuggestedBindingRedirects.cache
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.Form1.resources
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.Properties.Resources.resources
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.csproj.GenerateResource.cache
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.csproj.CoreCompileInputs.cache
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.exe
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.pdb
+F:\VS Space\MovieToGif\bin\Debug\Interop.WMPLib.dll
+F:\VS Space\MovieToGif\bin\Debug\AxInterop.WMPLib.dll
+F:\VS Space\MovieToGif\obj\Debug\Interop.WMPLib.dll
+F:\VS Space\MovieToGif\obj\Debug\AxInterop.WMPLib.dll
+F:\VS Space\MovieToGif\obj\Debug\MovieToGif.csproj.ResolveComReference.cache
