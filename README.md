@@ -1,7 +1,7 @@
 # Mp4ToGif
 初学者自制的简易Mp4转Gif工具
 ## 效果演示
-![demo1.gif](https://s2.loli.net/2022/08/07/RxsV4rPycdMWoFv.gif)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_1.gif)
 ## 起因
 写博客需要用到动图，当录制完视频之后，在网上寻找mp4转gif的在线网站，有很多转换出来的效果不好，还有一些需要开通会员或者付费才能下载。有人推荐格式工厂，但是目前需求没有那么多，也不想下载它100MB庞大的客户端
 ## 经过
@@ -10,11 +10,11 @@
 ### 系统环境变量
 将下载好的ffmpeg文件中的bin文件夹添加到系统环境变量Path中
 
-![image.png](https://s2.loli.net/2022/08/07/LeEsx1CZR7QMvYi.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_2.png)
 
 在终端中输入`ffmpeg -version`，像这样就是配置好了
 
-![image.png](https://s2.loli.net/2022/08/07/kstGHfAFEzV2iUZ.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_3.png)
 ### IDE及编程语言
 IDE：`Visual Studio 2022`
 编程语言：`C#`
@@ -26,9 +26,9 @@ using System.Diagnostics;
 using WMPLib;
 ```
 其中WMPLib命名空间需要安装COM组件中的Windows Media Player
-![image.png](https://s2.loli.net/2022/08/07/1F6HgsMYQihuc5N.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_4.png)
 ### 设计软件的布局
-![image.png](https://s2.loli.net/2022/08/07/VC4L3yQJg6pBPSO.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_5.png)
 ## 实现功能
 ### ffmpeg命令的使用方法
 `ffmpeg -ss 00:00 -t 3.5 -i xxx.mp4 -r 24 xxx.gif`
@@ -150,4 +150,4 @@ private void button2_Click(object sender, EventArgs e)
 ## 注意事项
 如果文件名中含有空格，则无法正常转换
 ## 一个简单小巧的自用工具完成！
-![image.png](https://s2.loli.net/2022/08/07/eYMyJszOkS793ju.png)
+![](https://zwhy-1310134253.cos.ap-beijing.myqcloud.com/mp4togif_6.png)
