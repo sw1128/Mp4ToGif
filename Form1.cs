@@ -27,7 +27,7 @@ namespace MovieToGif
         string fileName = "";
         string outputPath = "";
 
-        public Double Duration(String file)
+        public double Duration(string file)
         {
             WindowsMediaPlayer wmp = new WindowsMediaPlayerClass();
             IWMPMedia mediainfo = wmp.newMedia(file);
@@ -41,13 +41,14 @@ namespace MovieToGif
             {
                 str = "不支持一小时以上的视频";
             }
-            if (ts.Hours == 0 && ts.Minutes > 0)
+            else if (ts.Hours == 0 && ts.Minutes > 0)
             {
-                str = String.Format("{0:00}", ts.Minutes) + ":" + String.Format("{0:00}", ts.Seconds);
+                str = $'{String.Format("{0:00}", ts.Minutes)}:{String.Format("{0:00}", ts.Seconds)}';
+                // 使用字符串内插语法 $"{变量名}"
             }
-            if (ts.Hours == 0 && ts.Minutes == 0)
+            else if (ts.Hours == 0 && ts.Minutes == 0)
             {
-                str = "00:" + String.Format("{0:00}", ts.Seconds);
+                str = $'00:{String.Format("{0:00}", ts.Seconds)}';
             }
             return str;
         }
@@ -75,7 +76,7 @@ namespace MovieToGif
             cutTime = cut.Text;
             filePath = infile.Text;
             frames = frame.Text;
-            command = "ffmpeg -ss " + startTime + " -t " + cutTime + " -i " + filePath + " -r " + frames + " " + outputPath;
+            command = $"ffmpeg -ss {startTime} -t {cutTime} -i {filePath} -r {frames} {outputPath}";
             return command;
         }
         private void button2_Click(object sender, EventArgs e)
@@ -83,12 +84,10 @@ namespace MovieToGif
             if (infile.Text == "未选择")
             {
                 MessageBox.Show("请选择一个文件","提示");
-                return;
             }
-            if (label10.Text == "")
+            else if (label10.Text == "")
             {
                 MessageBox.Show("请选择导出路径", "提示");
-                return;
             }
             else
             {
@@ -113,7 +112,7 @@ namespace MovieToGif
             if (folder.ShowDialog() == DialogResult.OK)
             {
                 fileName = folder.SelectedPath.Replace("\\", "/");
-                outputPath = fileName + "/" + outfile.Text + ".gif";
+                outputPath = $"{fileName}/{outfile.Text}.gif";
                 label10.Text = outputPath;
             }
         }
